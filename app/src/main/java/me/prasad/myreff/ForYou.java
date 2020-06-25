@@ -78,6 +78,7 @@ public class ForYou extends Fragment {
                 i++;
                 Toast.makeText(getContext(),"pull count"+i,Toast.LENGTH_SHORT).show();
                // your code
+                appData.clear();
                 setListnerForRecevingNewData();
                 pullToRefresh.setRefreshing(false);
             }

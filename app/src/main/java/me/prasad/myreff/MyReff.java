@@ -26,6 +26,7 @@ public class MyReff {
     }
 
     @NonNull
+
     public String getCategory() {
         return category;
     }
@@ -35,6 +36,7 @@ public class MyReff {
     }
 
     @NonNull
+
     @ColumnInfo(name="category")
     public String category;
 

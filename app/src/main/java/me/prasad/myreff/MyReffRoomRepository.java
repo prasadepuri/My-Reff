@@ -28,4 +28,9 @@ public class MyReffRoomRepository {
         myReff=myReffDao.getAllData();
         return myReff;
     }
+    List<MyReff> getPoliticsData()
+    {
+        myReff=myReffDao.getPoliticsData();
+        return myReff;
+    }
 }

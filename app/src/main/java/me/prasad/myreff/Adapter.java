@@ -42,6 +42,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.DataViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull final DataViewHolder holder, int position) {
         final AppData currentItem=appData.get(position);
+        holder.setIsRecyclable(false);
 
        holder.cardView.setAnimation(AnimationUtils.loadAnimation(context,R.anim.fade_scaleanimation));        holder.title.setText(currentItem.getTitle());
         holder.link.setText(currentItem.getLink());

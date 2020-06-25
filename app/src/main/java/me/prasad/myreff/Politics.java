@@ -56,6 +56,7 @@ public class Politics extends Fragment {
                 i++;
                 Toast.makeText(getContext(),"pull count"+i,Toast.LENGTH_SHORT).show();
                 // your code
+                appData.clear();
                 loadContentofPolitics();
                 pullToRefresh.setRefreshing(false);
             }
@@ -63,6 +64,7 @@ public class Politics extends Fragment {
         int clicks=0;
         clicks++;
         if(clicks<=1) {
+            appData.clear();
             loadContentofPolitics();
         }
         return rootview;
@@ -75,7 +77,7 @@ public class Politics extends Fragment {
     public class GetPoliticsTask extends AsyncTask<Void, Void, List<MyReff>> {
         @Override
         protected List<MyReff> doInBackground(Void... url) {
-            return myReffRoomRepository.getAllData();
+            return myReffRoomRepository.getPoliticsData();
 
         }
     }
