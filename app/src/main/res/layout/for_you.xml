@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    app:cardElevation="3dp"
+    android:id="@+id/cardview"
+    android:layout_marginTop="10dp">
+<LinearLayout
+    android:id="@+id/relativelayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/roboto"
+        android:text="I am ok"
+        android:textSize="22sp"
+        android:textColor="@android:color/holo_blue_dark"
+        />
+    <TextView
+        android:layout_below="@id/title"
+        android:id="@+id/link"
+        android:text="newh"
+        android:textSize="8sp"
+        android:layout_weight="1"
+        android:textColor="#959898"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/date"
+            android:textSize="12sp"
+            android:layout_weight="0"
+            android:text="h122213233322"
+            android:layout_below="@id/link"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

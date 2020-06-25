@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fnewback"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLayoutt"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabTextColor="@android:color/darker_gray"
+
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:background="@drawable/fnewback"
+        app:tabSelectedTextColor="@android:color/white"
+        android:layout_width="match_parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="wrap_content"
+            android:id="@+id/entertainment"
+            android:text="For You"
+            android:layout_width="wrap_content"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="wrap_content"
+            android:id="@+id/kids"
+            android:text="politics"
+            android:layout_width="wrap_content"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="wrap_content"
+            android:id="@+id/education"
+            android:text="Education"
+            android:layout_width="wrap_content"/>
+
+
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
