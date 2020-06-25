@@ -8,6 +8,7 @@
     android:layout_marginRight="4dp"
     app:cardElevation="3dp"
     android:id="@+id/cardview"
+    android:background="@android:color/holo_blue_dark"
     android:layout_marginTop="10dp">
 <LinearLayout
     android:id="@+id/relativelayout"
