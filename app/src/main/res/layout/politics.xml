@@ -7,7 +7,7 @@
     android:layout_marginLeft="4dp"
     android:layout_marginRight="4dp"
     app:cardElevation="3dp"
-    android:id="@+id/cardview"
+    android:id="@+id/cardviewPolitics"
     android:layout_marginTop="10dp">
 <LinearLayout
     android:id="@+id/relativelayout"
@@ -17,7 +17,7 @@
     >
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/ptitle"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
@@ -29,7 +29,7 @@
         />
     <TextView
         android:layout_below="@id/title"
-        android:id="@+id/link"
+        android:id="@+id/plink"
         android:text="newh"
         android:textSize="8sp"
         android:layout_weight="1"
@@ -38,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
         <TextView
-            android:id="@+id/date"
+            android:id="@+id/pdate"
             android:textSize="12sp"
             android:layout_weight="0"
             android:text="h122213233322"

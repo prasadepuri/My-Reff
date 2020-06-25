@@ -78,15 +78,20 @@ public class ForYou extends Fragment {
                 i++;
                 Toast.makeText(getContext(),"pull count"+i,Toast.LENGTH_SHORT).show();
                // your code
+                setListnerForRecevingNewData();
                 pullToRefresh.setRefreshing(false);
             }
         });
         //loadRecycleView();
-        setListnerForRecevingNewData();
+       // setListnerForRecevingNewData();
         if(clicks<=1) {
             Toast.makeText(getContext(),"pull count click"+clicks,Toast.LENGTH_SHORT).show();
-           // setListnerForRecevingNewData();
+           setListnerForRecevingNewData();
             //loadData();
+        }
+        else
+        {
+            loadDataToRecylceview();
         }
 
         return rootView;
@@ -101,12 +106,13 @@ public class ForYou extends Fragment {
                 for (DocumentChange doc : queryDocumentSnapshots.getDocumentChanges()) {
 
                     if (doc.getType().equals(DocumentChange.Type.ADDED)) {
-
+                        int i=0;
+                        i++;
                         Log.d("info of process", doc.getDocument().getData().toString());
                         String title, category, url, imageurl;
                         long timestamp = (long) (doc.getDocument().getData().get("timestamp"));
                         title = (String) (doc.getDocument().getData().get("title"));
-                      //  Toast.makeText(getContext(), title + "firebase", Toast.LENGTH_LONG).show();
+                       Toast.makeText(getContext(), title + "firebase"+i, Toast.LENGTH_LONG).show();
                         category = (String) (doc.getDocument().getData().get("category"));
                         imageurl = (String) (doc.getDocument().getData().get("image url"));
                         url = (String) (doc.getDocument().getData().get("link"));
@@ -232,4 +238,6 @@ public class ForYou extends Fragment {
                     }
                 });
     }
+
+
 }
